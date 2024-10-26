@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="author" content="Nawshan">
+		<link rel="prefetch" href="../_/logo.svg">
+		<link rel="icon" href="../_/logo.svg">
+		<title>Nawshan - Admin Login</title>
+		<link rel="stylesheet" href="../style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<section id="identity">
+				<img src="../_/logo.svg">
+				<a href="../"><h1>Nawshan</h1></a>
+			</section>
+
+			<nav>
+				<a href="../#home">Home</a>
+				<a href="../#contact">Contact</a>
+				<a id="main" href="../quote">Book Free Quote</a>
+			</nav>
+		</header>
+		
+		<section class="spacer"></section>
+
+		<main>
+			<section class="centered" style="background: linear-gradient(to bottom left, var(--footer), transparent); padding: 3em; border-radius: 1em;">
+				<section style="margin-bottom: 3em; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1em;">
+					<img src="../_/logo.svg" style="mix-blend-mode: color-dodge; width: 50%; user-select: none;">
+					<h2>Admin Login</h2>
+				</section>
+				<form action="./login.php" method="post">
+					<label>
+						Username<br>
+						<input type="text" name="username" required pattern="(.|\s)*\S(.|\s)*" title="">
+					</label>
+					
+					<label>
+						Password<br>
+						<input type="password" name="password" required title="" minlength="8">
+					</label>
+					
+					<input type="submit" value="Sign in" style="margin-top: 1em;" name="submit">
+				</form>
+			</section>
+		</main>
+
+		<section class="spacer"></section>
+		<section class="spacer"></section>
+
+		<footer>
+			<p><small>Copyright © 2023 Nawshan. All Rights Reserved</small></p>
+		</footer>
+	</body>
+	
+	<!-- <script src="./script.js" type="text/JavaScript"></script> -->
+</html>
